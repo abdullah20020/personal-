@@ -13,6 +13,11 @@
   <nav class="navbar">
     <div class="container navbar-content">
       <div class="navbar-logo">portfolio</div>
+      <div class="navbar-hamburger" id="navbar-hamburger" aria-label="Open navigation" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="navbar-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -204,7 +209,21 @@
           e.preventDefault();
           target.scrollIntoView({ behavior: 'smooth' });
         }
+        // Close navbar on mobile after click
+        document.querySelector('.navbar').classList.remove('open');
       });
+    });
+
+    // Hamburger menu toggle
+    const navbar = document.querySelector('.navbar');
+    const hamburger = document.getElementById('navbar-hamburger');
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('open');
+    });
+    hamburger.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        navbar.classList.toggle('open');
+      }
     });
 
     // Animation on scroll
