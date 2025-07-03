@@ -433,10 +433,25 @@ body {
     gap: 0.5rem;
     width: 100%;
   }
+
   .navbar-cv-btn {
-    margin-top: 0.5rem;
-    width: 100%;
-    text-align: center;
+    font-size: 0.6rem;                  /* حجم الخط أصغر */
+    padding: 0.03rem 0.06rem;            /* تقليل الحشو أكثر */
+    width: fit-content;
+    margin: 0.1rem 0 0 auto;
+    border-radius: 50px;
+    background: transparent;
+    color: #512BD4;
+    font-weight: 500;
+    border: 0cap solid #512BD4;          /* لتحديد شكل الزر */
+    box-shadow: none;                   /* إزالة الظل لتبسيطه */
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+  
+  .navbar-cv-btn:hover {
+    background: #f1effc;
+    color: #3d1cb8;
   }
   .contact-info {
     flex-direction: column;
