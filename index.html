@@ -10,34 +10,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="container navbar-content">
+      <div class="navbar-logo">portfolio</div>
+      <ul class="navbar-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="cv.pdf" class="btn outline navbar-cv-btn" download>Download CV</a>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
   <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <div class="hero-flex">
-        <div class="profile-pic-wrapper">
-          <img src="personal website.jpg" alt="Abdullah Hisham Ahmed profile picture" class="profile-pic">
+      <div class="hero-center">
+        <div class="hero-typewriter">
+          <h1 class="hero-title" id="typewriter-title"></h1>
+          <h2 class="hero-subtitle" id="typewriter-subtitle"></h2>
+          <p class="hero-bio" id="typewriter-bio"></p>
         </div>
-        <div class="hero-text">
-          <h1>Abdullah Hisham Ahmed</h1>
-          <h2>Junior .NET Developer</h2>
-          <p>I'm a junior backend developer skilled in ASP.NET Core, C#, and SQL Server. I build secure and scalable APIs and love learning new technologies.</p>
-          <div class="hero-contact">
-            <a href="mailto:abdullahhesham20002@gmail.com" class="hero-contact-link">abdullahhesham20002@gmail.com</a>
-            <a href="tel:01002449577" class="hero-contact-link">01002449577</a>
-            <span class="hero-social-icons">
-              <a href="https://linkedin.com/in/abdullah-hisham-33958b251" target="_blank" rel="noopener" aria-label="LinkedIn">
-                <svg class="hero-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
-              </a>
-              <a href="https://github.com/abdullah20020" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg class="hero-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.262.82-.582 0-.288-.012-1.243-.017-2.252-3.338.726-4.042-1.415-4.042-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.606-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399 3.003-.404 1.018.005 2.046.138 3.006.404 2.289-1.552 3.295-1.23 3.295-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.625-5.475 5.921.43.372.823 1.104.823 2.226 0 1.606-.015 2.898-.015 3.293 0 .322.216.699.825.58C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-            </span>
-          </div>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn primary">View Projects</a>
-
-            <a href="Abdullah-Hisham-Ahmed-FlowCV-Resume-20250702.pdf" class="btn outline" download>Download CV</a>
-          </div>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
         </div>
       </div>
     </div>
@@ -45,11 +42,60 @@
 
   <!-- About Section -->
   <section class="about" id="about">
-    <div class="container">
-      <h3>About Me</h3>
-      <p>
-        I am a passionate backend developer with a strong foundation in computer science and software engineering. I graduated with a degree in Computer Science and have a keen interest in building robust, scalable, and secure web applications. My interests include exploring new technologies, contributing to open-source projects, and continuous learning.
-      </p>
+    <div class="container about-card">
+      <div class="about-left">
+        <div class="about-profile-pic-wrapper">
+          <img src="personal website.jpg" alt="Abdullah Hisham Ahmed profile picture" class="about-profile-pic">
+        </div>
+        <div class="about-info">
+          <p><strong>Name:</strong> Abdullah Hisham Ahmed</p>
+          <p><strong>Profile:</strong> Junior .NET Developer</p>
+          <p><strong>Email:</strong> <a href="mailto:abdullahhesham20002@gmail.com">abdullahhesham20002@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:01002449577">01002449577</a></p>
+        </div>
+        <div class="about-skills">
+          <h4>Skills</h4>
+          <ul>
+            <li>C#</li>
+            <li>ASP.NET Core</li>
+            <li>Entity Framework</li>
+            <li>SQL Server</li>
+            <li>LINQ</li>
+            <li>SignalR</li>
+            <li>RESTful APIs</li>
+            <li>JWT, OAuth</li>
+            <li>Clean Architecture</li>
+            <li>SOLID Principles</li>
+            <li>JavaScript</li>
+            <li>React (Basics)</li>
+            <li>HTML, CSS</li>
+            <li>Git, GitHub</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-right">
+        <h3>About Me</h3>
+        <div class="about-bio">
+          <p>
+            I am a passionate and driven <strong>Backend Developer</strong> with a solid foundation in <strong>Computer Science</strong> and <strong>Software Engineering</strong>.<br>
+            I hold a <strong>Bachelor's degree in Computer Science</strong>, and I specialize in designing and developing <strong>robust, scalable, and secure web applications</strong>.
+          </p>
+          <p>
+            My technical expertise lies primarily in building clean and efficient back-end systems using technologies like
+            <span class="about-skill">C#</span>, <span class="about-skill">ASP.NET Core</span>, <span class="about-skill">Entity Framework</span>, <span class="about-skill">SQL Server</span>, and <span class="about-skill">RESTful APIs</span>.<br>
+            I also have hands-on experience with <span class="about-skill">real-time communication (SignalR)</span>, <span class="about-skill">authentication/authorization (JWT, OAuth)</span>, and applying <span class="about-skill">Clean Architecture</span> and <span class="about-skill">SOLID principles</span> for maintainable and testable codebases.
+          </p>
+          <ul class="about-list">
+            <li>Exploring and adopting new technologies and frameworks</li>
+            <li>Working on open-source projects and collaborating with the developer community</li>
+            <li>Continuously improving through self-learning, online courses, and real-world practice</li>
+            <li>Applying Agile methodologies and working in cross-functional teams</li>
+          </ul>
+          <p>
+            I take pride in writing <strong>clean, maintainable, and well-documented code</strong>, and I'm committed to building solutions that make a real impact.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -100,82 +146,35 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="skills" id="skills">
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
     <div class="container">
-      <h3>Skills</h3>
-  
-      <!-- Programming Languages -->
-      <div class="skills-list" style="margin-top: 1.5rem;">
-        <span class="skill-badge">C#</span>
-        <span class="skill-badge">JavaScript</span>
-        <span class="skill-badge">C</span>
-        <span class="skill-badge">Java</span>
+      <h3>Contact</h3>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm0 0c-4.418 0-8 2.015-8 4.5V20h16v-4c0-2.485-3.582-4.5-8-4.5Z"/></svg>
+          </div>
+          <div class="contact-title">Address</div>
+          <div class="contact-detail">Cairo, Egypt</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 2 5.18 2 2 0 0 1 4 3h3a2 2 0 0 1 2 1.72c.13 1.05.37 2.07.72 3.05a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.98.35 2 .59 3.05.72A2 2 0 0 1 22 16.92Z"/></svg>
+          </div>
+          <div class="contact-title">Call Us</div>
+          <div class="contact-detail"><a href="tel:01002449577">+20 1002449577</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 6-8.97 7.03a2 2 0 0 1-2.06 0L2 6"/></svg>
+          </div>
+          <div class="contact-title">Email Us</div>
+          <div class="contact-detail"><a href="mailto:abdullahhesham20002@gmail.com">abdullahhesham20002@gmail.com</a></div>
+        </div>
       </div>
-  
-      <!-- Backend Technologies -->
-      <div class="skills-list">
-        <span class="skill-badge">ASP.NET Core Web API</span>
-        <span class="skill-badge">ASP.NET MVC</span>
-        <span class="skill-badge">Entity Framework</span>
-        <span class="skill-badge">LINQ</span>
-        <span class="skill-badge">SignalR</span>
-      </div>
-  
-      <!-- Frontend Technologies -->
-      <div class="skills-list">
-        <span class="skill-badge">HTML5</span>
-        <span class="skill-badge">CSS3</span>
-        <span class="skill-badge">Bootstrap</span>
-        <span class="skill-badge">JavaScript</span>
-        <span class="skill-badge">React (Basics)</span>
-      </div>
-  
-      <!-- Databases -->
-      <div class="skills-list">
-        <span class="skill-badge">SQL Server</span>
-      </div>
-  
-      <!-- Caching & Real-time -->
-      <div class="skills-list">
-        <span class="skill-badge">Redis</span>
-        <span class="skill-badge">Caching Services</span>
-        <span class="skill-badge">ngrok</span>
-      </div>
-  
-      <!-- Architecture & Design -->
-      <div class="skills-list">
-        <span class="skill-badge">Clean Architecture</span>
-        <span class="skill-badge">3-Tier Architecture</span>
-        <span class="skill-badge">SOLID Principles</span>
-        <span class="skill-badge">Design Patterns</span>
-      </div>
-  
-      <!-- Tools & Version Control -->
-      <div class="skills-list">
-        <span class="skill-badge">Git</span>
-        <span class="skill-badge">GitHub</span>
-      </div>
-  
-      <!-- Cloud & DevOps -->
-      <div class="skills-list">
-        <span class="skill-badge">Google Cloud Platform (GCP)</span>
-      </div>
-  
-      <!-- Soft Skills -->
-      <div class="skills-list">
-        <span class="skill-badge">Self-Learner</span>
-        <span class="skill-badge">Teamwork</span>
-        <span class="skill-badge">Leadership</span>
-        <span class="skill-badge">Problem Solving</span>
-        <span class="skill-badge">Agile Methodologies</span>
-      </div>
-  
     </div>
   </section>
-
-  <!-- Contact Section -->
-
 
   <!-- Footer -->
   <footer class="footer">
@@ -207,6 +206,41 @@
         }
       });
     });
+
+    // Animation on scroll
+    function animateOnScroll() {
+      const animatedEls = document.querySelectorAll('.hero, .about, .projects, .skills, .contact, .project-card, .skill-badge');
+      animatedEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          el.classList.add('animate-visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+
+    // Typewriter effect for hero section
+    const typewriterData = [
+      { el: document.getElementById('typewriter-title'), text: "Hi, I'm Abdullah Hisham" },
+      { el: document.getElementById('typewriter-subtitle'), text: "Junior .NET Developer" },
+      { el: document.getElementById('typewriter-bio'), text: "I build secure and scalable backends using ASP.NET Core, C#, SQL Server, and more." }
+    ];
+    let twIndex = 0, charIndex = 0;
+    function typeNextChar() {
+      if (twIndex >= typewriterData.length) return;
+      const { el, text } = typewriterData[twIndex];
+      if (charIndex <= text.length) {
+        el.textContent = text.slice(0, charIndex);
+        charIndex++;
+        setTimeout(typeNextChar, 40);
+      } else {
+        twIndex++;
+        charIndex = 0;
+        setTimeout(typeNextChar, 600);
+      }
+    }
+    window.addEventListener('DOMContentLoaded', typeNextChar);
   </script>
 </body>
 </html> 
